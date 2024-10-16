@@ -1,4 +1,7 @@
-/** Add your relevant code here for the issue to reproduce */
+
+import { beta } from '@stdlib/stats-base-dists';
+
 export default function Home() {
-  return null;
+  const result = new beta.Beta(5, 5).quantile(0.5);
+  return <div>{result}</div>;
 }
